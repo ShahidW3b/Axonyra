@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axonyra — AI • Cybersecurity • Education • Health</title>
+  <meta name="description" content="Axonyra is a research-led company advancing safe, human-centered AI across cybersecurity, education, and health.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo1.jpg" type="image/jpg">
+
+
+  <script defer src="file.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Axonyra home">
+        <img src="images/logo.png" alt="Axonyra logo">
+      </a>
+      <nav class="links" id="primaryNav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#news" data-i18n="nav.news">News</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#researchers" data-i18n="nav.researchers">Researchers</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <select id="langSelect" aria-label="Language"
+          style="margin-left:12px; padding:4px 6px; border-radius:6px; border:1px solid #ccc; font-size:0.9rem;">
+    <option value="en">EN</option>
+    <option value="de">DE</option>
+  </select>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+
+    <!-- Mobile Menu (drawer) -->
+  <div id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+  <a href="#home" class="logo">
+    <img src="images/logo.png" alt="Exonyra logo" style="height:40px;">
+  </a>
+  <button class="mobile-close" id="menuClose" aria-label="Close menu">×</button>
+
+  <a href="#home"><i class="fa fa-home"></i> Home</a>
+  <a href="#about"><i class="fa fa-info-circle"></i> About</a>
+  <a href="#research"><i class="fa fa-flask"></i> Research</a>
+  <a href="#news"><i class="fa fa-newspaper"></i> News</a>
+  <a href="#publications"><i class="fa fa-book"></i> Publications</a>
+  <a href="#researchers"><i class="fa fa-user-graduate"></i> Researchers</a>
+  <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+</div>
+
+</header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="container section hero grid-2" id="hero">
+      <div>
+        <h1><span data-i18n="hero.title">Human‑Centered AI for Education and Health</span></h1>
+        <p class="muted"><span data-i18n="hero.tagline">We conduct rigorous research and engineer production systems in AI, cybersecurity, education technology, and healthcare.</span></p>
+        <div class="cta-row">
+  <a class="btn primary" href="#publications" data-i18n="hero.meet">View Pulications</a>
+  <button id="joinUsBtn" class="btn outline" type="button">Join us</button>
+
+</div>
+        
+        <div class="partners">
+          <h3 class="partners-title">Our Partners</h3>
+          <div class="partners-row">
+            <a href="https://hms.harvard.edu/" aria-label="Partner A website" class="partner-card">
+              <img src="images/Partiner1.jpg" alt="Harvard Medical School">
+            </a>
+            <a href="https://www.unimelb.edu.au/" aria-label="Partner B website" class="partner-card">
+              <img src="images/partiner3.png" alt="University of Melbourne">
+            </a>
+            <a href="https://www.tu.berlin/en/" aria-label="Partner C website" class="partner-card">
+              <img src="images/partiner2.png" alt="University of Melbourne">
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero-media">
+        <img src="images/office.png" alt="Axonyra Team in office">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section about grid-2 section-observe">
+      <div class="about-text">
+        <h2>About us</h2>
+        <p class="lead">We advance AI that serves people — supporting clinicians and educators, and protecting data through modern security practices.</p>
+        <div class="about-block">
+          <h3>Mission</h3>
+          <p>To build safe, reliable, and human‑centered AI for education and health.</p>
+        </div>
+        <div class="about-block">
+          <h3>Vision</h3>
+          <p>A future where AI strengthens learning, improves care, and preserves privacy.</p>
+        </div>
+        <div class="values">
+          <div class="value-card"><strong>Integrity</strong><span class="muted">Open methods, honest evaluation.</span></div>
+          <div class="value-card"><strong>Innovation</strong><span class="muted">From research to real‑world impact.</span></div>
+          <div class="value-card"><strong>Collaboration</strong><span class="muted">Universities, hospitals, and schools.</span></div>
+          <div class="value-card"><strong>Impact</strong><span class="muted">Systems people actually use.</span></div>
+        </div>
+        <div class="cta-row">
+  <a class="btn primary" href="#researchers" data-i18n="hero.meet1">Meet our researchers</a>
+</div>
+      </div>
+      <div class="about-media">
+        <img src="images/Medical+Tech+Edu.jpg" alt="Meidcal, Technology, Education">
+      </div>
+    </section>
+
+    <!-- Research Focus -->
+    <section id="research" class="container section section-observe">
+      <h2>Research focus</h2>
+      <p class="muted">Bridging rigorous research with product‑grade engineering.</p>
+      <div class="grid cards" id="researchCards"></div>
+    </section>
+
+    <!-- News / Blog -->
+    <section id="news" class="container section section-observe">
+      <div class="section-head">
+        <h2>News & updates</h2>
+      </div>
+      <div class="grid news-grid" id="newsGrid"></div>
+    </section>
+
+    <!-- Publications with Filters -->
+    <section id="publications" class="container section section-observe">
+      <h2>Publications</h2>
+      <div class="filters">
+        <input type="search" id="pubSearch" class="input" placeholder="Search by title or author…">
+        <select id="pubYear" class="select"></select>
+        <select id="pubArea" class="select">
+          <option value="All">All areas</option>
+          <option value="AI">AI</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="Education">Education</option>
+          <option value="Health">Health</option>
+        </select>
+      </div>
+      <div class="muted tiny" id="pubCount"></div>
+      <div class="grid pub-grid" id="pubGrid"></div>
+    </section>
+
+    <!-- Researchers -->
+    <section id="researchers" class="container section section-observe">
+      <h2>Researchers</h2>
+      <div class="grid team-grid" id="teamGrid"></div>
+    </section>
+
+
+<!-- Toast notification -->
+<div id="toast" style="display:none; position:fixed; bottom:20px; right:20px; background:#333; color:#fff; padding:12px 20px; border-radius:6px; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:1000;"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="container section contact-grid section-observe">
+      <div>
+        <h2>Contact</h2>
+        <!-- Replace YOUR_FORM_ID once you create Formspree form -->
+        <form id="contactForm" class="contact-form" action="#" method="POST">
+          <label class="label" data-i18n="contact.name_label">Your name</label>
+          <input class="input" name="name" placeholder="Full name" required data-i18n-placeholder="contact.name_ph">
+          <label class="label" data-i18n="contact.email_label">Your email</label>
+          <input class="input" type="email" name="email" placeholder="you@company.com" required data-i18n-placeholder="contact.email_ph">
+          <label class="label" data-i18n="contact.subject_label">Subject</label>
+          <input class="input" name="subject" placeholder="Subject" data-i18n-placeholder="contact.subject_ph">
+          <label class="label" data-i18n="contact.message_label">Message</label>
+          <textarea class="input" name="message" rows="6" placeholder="How can we help?" required data-i18n-placeholder="contact.message_ph"></textarea>
+          <input type="hidden" name="_to" value="info@exonyra.com">
+          <button class="btn primary" type="submit" data-i18n="contact.send">Send</button>
+        </form>
+      </div>
+      <div class="contact-media">
+        <img src="images/contact.jpg" alt="Contact us">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Exonyra</h3>
+        <p class="muted">Advancing human‑centered AI across research, medicine, and learning.</p>
+        <p class="tiny">Exonyra is dedicated to advancing safe and human-centered AI across research, 
+          medicine, and education. Operating at the crossroads of artificial intelligence, cybersecurity, health,
+          and learning, we combine scientific inquiry with practical innovation.</p>
+      </div>
+      <div>
+        <h3>Research Areas</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.athenic.com/?utm_source=revleads&utm_medium=referral&utm_campaign=ai-platforms">AI</a></li>
+          <li><a href="https://thehackernews.com/">Cybersecurity</a></li>
+          <li><a href="https://www.midwestteachersinstitute.org/special-education-ai-tools/">Education</a></li>
+          <li><a href="https://brightinsight.com/">Health</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stay Updated</h3>
+        <form id="newsletterForm" class="newsletter" action="#" method="POST">
+          <input id="nlEmail" class="input" type="email" name="email" placeholder="info@axonyra.com" required data-i18n-placeholder="contact.email_ph">
+          <button class="btn primary" type="submit">Subscribe</button>
+        </form>
+        <div class="social-label">Follow us:</div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/shahabshahid00?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWWb89oPrTu6PPkAmhubGqQ%3D%3D"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/_bibli0phil3_/"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Twitter"></a>
+          <a href="https://github.com/ShahidW3b"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="tiny muted">© <span id="year"></span> Exonyra.</p>
+        <div class="tiny muted">
+  <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a>
+</div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Contact button -->
+  <button id="stickyContact" class="sticky-contact" aria-label="Open contact form">Contact us</button>
+
+  <!-- Back-to-top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Contact Modal -->
+  <dialog id="contactModal" class="modal">
+    <form method="dialog" class="modal-card" id="contactModalCard">
+      <div class="modal-bar"></div>
+      <button class="modal-close" aria-label="Close">×</button>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><h3 data-i18n="contact.title">Contact Exonyra</h3><img src="images/logo.png" alt="Exonyra logo" style="height:40px;"></div>
+      <p class="muted">We’ll respond at <strong>info@exonyra.com</strong>.</p>
+      <form id="contactFormModal" action="#" method="POST">
+        <label class="label" data-i18n="contact.name_label">Your name</label>
+        <input class="input" name="name" required data-i18n-placeholder="contact.name_ph">
+        <label class="label" data-i18n="contact.email_label">Your email</label>
+        <input class="input" type="email" name="email" required data-i18n-placeholder="contact.email_ph">
+        <label class="label" data-i18n="contact.subject_label">Subject</label>
+        <input class="input" name="subject" data-i18n-placeholder="contact.subject_ph">
+        <label class="label" data-i18n="contact.message_label">Message</label>
+        <textarea class="input" name="message" rows="6" required data-i18n-placeholder="contact.message_ph"></textarea>
+        <input type="hidden" name="_to" value="info@exonyra.com">
+        <button class="btn primary" type="submit" data-i18n="contact.send">Send</button>
+      </form>
+    </form>
+  </dialog>
+
+  <!-- Generic Status Modal -->
+  <dialog id="statusModal" class="modal">
+    <form method="dialog" class="modal-card">
+      <div class="modal-bar"></div>
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3 id="statusTitle" data-i18n="status.success">Success</h3>
+      <p class="muted" id="statusMessage" data-i18n="status.sent">Your message has been sent.</p>
+      <div class="cta-row">
+  <a class="btn primary" href="#researchers" data-i18n="hero.meet">Meet our researchers</a>
+  <button class="btn outline" class="open-contact" type="button">Join us</button>
+</div>
+    </form>
+  </dialog>
+
+  <!-- News Article Modal -->
+  <dialog id="articleModal" class="modal">
+    <form method="dialog" class="modal-card">
+      <div class="modal-bar"></div>
+      <button class="modal-close" aria-label="Close">×</button>
+      <img id="articleCover" class="pub-cover" alt="Article cover" />
+      <h3 id="articleTitle"></h3>
+      <div class="tiny muted" id="articleDate"></div>
+      <p id="articleBody" class="muted" style="margin-top:8px"></p>
+<div class="cta-row">
+  <a id="articleViewBtn" class="btn small primary" href="#" target="_blank" rel="noopener noreferrer">
+    View Updates
+  </a>
+</div>
+
+  
+</div>
+    </form>
+  </dialog>
+
+  <!-- Researcher Profile Modal (tabs) -->
+  <dialog id="profileModal" class="modal modal-profile">
+    <form method="dialog" class="modal-card">
+      <div class="modal-bar"></div>
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="profile-header">
+        <img id="profPhoto" alt="Researcher photo">
+        <div>
+          <h3 id="profName">Name</h3>
+          <p id="profRole" class="muted">Role</p>
+          <div id="profBadges" class="badges"></div>
+        </div>
+      </div>
+      <div class="tabs">
+        <button type="button" class="tab active" data-tab="overview">Overview</button>
+        <button type="button" class="tab" data-tab="publications">Publications</button>
+        <button type="button" class="tab" data-tab="experience">Experience / CV</button>
+      </div>
+      <div class="tab-panels">
+        <div id="tab-overview" class="tab-panel active">
+          <p id="profBio" class="muted"></p>
+          <div id="profAffils" class="affils"></div>
+        </div>
+        <div id="tab-publications" class="tab-panel">
+          <div id="profPubs" class="researcher-pubs"></div>
+        </div>
+        <div id="tab-experience" class="tab-panel">
+          <ul id="profExp" class="exp"></ul>
+          
+    <div class="cta-row">
+          <!-- Opens CV in new tab -->
+    <a id="profCvView" class="btn" target="_blank">View CV</a>
+
+          <!-- Forces download -->
+      <a id="profCvDownload" class="btn outline">Download CV</a>
+</div>
+
+    
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Researcher Contact Modal -->
+  <dialog id="contactInfoModal" class="modal modal-contact">
+    <form method="dialog" class="modal-card">
+      <div class="modal-bar"></div>
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3 id="contactName">Researcher Contact</h3>
+      <div class="contact-info">
+        <a id="contactEmail" href="#">📧 Email</a>
+        <a id="contactPhone" href="#">📱 Phone</a>
+      </div>
+      <div class="cta-row">
+        <button class="btn outline" onclick="closeModal($('#contactInfoModal'))">Close</button>
+      </div>
+    
+    </form>
+  </dialog>
+
+
+ <!-- Auth Modal -->
+<dialog id="authModal" class="modal">
+  <form method="dialog" class="modal-card">
+    <div class="modal-bar"></div>
+    <button class="modal-close" aria-label="Close">×</button>
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <h2>Login</h2>
+      <label class="label" for="login-email">Email</label>
+      <input id="login-email" type="email" class="input" placeholder="Enter your email" required>
+
+      <label class="label" for="login-password">Password</label>
+      <input id="login-password" type="password" class="input" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn primary" style="margin-top:12px;">Login</button>
+      <p class="tiny muted" style="margin-top:10px;">
+        Don’t have an account? <a href="#" id="showSignup">Sign up</a>
+      </p>
+    </div>
+
+    <!-- Signup Form (hidden by default) -->
+    <div id="signupForm" style="display:none;">
+      <h2>Create Account</h2>
+      <label class="label" for="signup-name">Full Name</label>
+      <input id="signup-name" type="text" class="input" placeholder="Enter your full name" required>
+
+      <label class="label" for="signup-email">Email</label>
+      <input id="signup-email" type="email" class="input" placeholder="Enter your email" required>
+
+      <label class="label" for="signup-password">Password</label>
+      <input id="signup-password" type="password" class="input" placeholder="Create a password" required>
+
+      <button type="submit" class="btn primary" style="margin-top:12px;">Sign Up</button>
+      <p class="tiny muted" style="margin-top:10px;">
+        Already have an account? <a href="#" id="showLogin">Login</a>
+      </p>
+    </div>
+  </form>
+</dialog>
+
+
+
+</body>
+</html>
+
