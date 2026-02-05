@@ -157,7 +157,7 @@ const RESEARCHERS = [
     id:'r2',
     name:'Shahabuddin Shahid', role:'Founder & CEO of Axonyra', focus:['Computer Science','Cybersecurity', 'Artificial Intelligence'],
     bio:'Applied ML scientist specializing in AI alignment, cybersecurity, and trustworthly system.',
-    photo:'images/CEO.JPEG',
+    photo:'images/CEO.jpeg',
     cv:'CV/Shahid.pdf',
     pubs:['p1','p2','p3','p4'],
     affiliations:['Axonyra Research (2026—Present)','Cisco Networking Academy (Partner Lab)', 'IEEE Member'],
