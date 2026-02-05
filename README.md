@@ -52,6 +52,9 @@ No external frameworks or libraries are required.
 
 ---
 
+## 📂 Project Structure
+
+
 /project-root <br>
 ├── index.html <br>
 ├── style.css <br>
@@ -60,5 +63,3 @@ No external frameworks or libraries are required.
 │ ├── images/ <br>
 │ └── logos/ <br>
 └── README.md
-## 📂 Project Structure
-
