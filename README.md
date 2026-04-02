@@ -1,16 +1,18 @@
 # Axonyra – Human-Centered AI Research Platform
 
+Axonyra is a lightweight, static research website developed using **HTML, CSS, and JavaScript**, dedicated to advancing **human-centered artificial intelligence** in **education, healthcare, and cybersecurity**.
+
+The platform presents research activities, publications, partnerships, and ongoing projects, with an emphasis on the responsible design, evaluation, and deployment of AI systems.
+
+---
+
 ## 📸 Preview 
 
 <a href="https://axonyra.vercel.app/"><strong>➥ Live Demo</strong></a>
 
 <img src="./images/preview.png" alt="Preview" width="800"/>
 
-Axonyra is a lightweight, static research website developed using **HTML, CSS, and JavaScript**, dedicated to advancing **human-centered artificial intelligence** in **education, healthcare, and cybersecurity**.
-
-The platform presents research activities, publications, partnerships, and ongoing projects, with an emphasis on the responsible design, evaluation, and deployment of AI systems.
-
----
+--- 
 
 ## 🌍 Research Focus Areas
 
