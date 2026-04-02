@@ -4,8 +4,6 @@
 
 <a href="https://axonyra.vercel.app/"><strong>➥ Live Demo</strong></a>
 
-<br><br>
-
 <img src="./images/preview.png" alt="Preview" width="800"/>
 
 Axonyra is a lightweight, static research website developed using **HTML, CSS, and JavaScript**, dedicated to advancing **human-centered artificial intelligence** in **education, healthcare, and cybersecurity**.
